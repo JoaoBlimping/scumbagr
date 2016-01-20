@@ -1,0 +1,55 @@
+body
+{
+	background-color:rgb(70,200,100);
+	margin:0px;
+}
+
+
+div
+{
+	background-color:white;
+	text-align:center;
+	width:80%;
+	position:relative;
+	left:10%;
+	padding:10px;
+}
+
+#top
+{
+	width:100%;
+	left:0%;
+	padding:0;
+}
+
+
+h1
+{
+	font-size:3em;
+	margin:0px;
+	color:rgb(70,200,100);
+}
+
+
+h2
+{
+	color:rgb(70,200,100);
+}
+
+
+hr
+{
+	color:rgb(70,200,100);
+}
+
+
+i
+{
+	color:white;
+}
+
+
+.avatar
+{
+	width:100px;
+}
