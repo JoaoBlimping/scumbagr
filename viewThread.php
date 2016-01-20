@@ -16,6 +16,11 @@ structure_insertHeader($row["thread_subject"],true);
 $forum = mysqli_fetch_assoc(database_getForum($row["thread_forum"]));
 
 
+if (!things_checkLevel($forum["forum_view_level"])) die("you must be at least level ".
+													  $row["forum_view_level"].
+													  " to be allowed here :)");
+
+
 
 
 
