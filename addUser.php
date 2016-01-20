@@ -85,7 +85,7 @@ else
 		//if the result is good
         if($result == database_SUCCESS)
         {
-			echo "Successfully registered. You can now <a href='signin.php'>sign in</a>
+			echo "Successfully registered. You can now <a href='login.php'>log in</a>
 				  and start posting! :-)";
         }
 
