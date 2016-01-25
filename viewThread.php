@@ -16,7 +16,7 @@ structure_insertHeader($row["thread_subject"],true);
 $forum = mysqli_fetch_assoc(database_getForum($row["thread_forum"]));
 
 
-if (!things_checkLevel($forum["forum_view_level"])) die("you must be at least level ".
+if (!things_checkLevel($forum["forum_view_level"],true)) die("you must be at least level ".
 													  $row["forum_view_level"].
 													  " to be allowed here :)");
 
@@ -42,6 +42,7 @@ if (!things_checkLevel($forum["forum_view_level"])) die("you must be at least le
 				echo "<tr><td class='avatar'>";
 				echo "<a href='viewUser.php?user_id=".$row["post_author"]."'>".
 					 database_getUsername($row["post_author"])."</a>";
+				echo "<br />".$row["post_date"];
 				echo "</td><td>";
 				echo "<p>".$row["post_content"]."</p>";
 				echo "</td></tr>";

@@ -58,7 +58,8 @@ else
 		//if the result is good
         if($result == database_SUCCESS)
         {
-			echo "thread Successfully added.";
+			echo "thread Successfully added. ";
+			echo "<a href='viewForum.php?forum_id=".$_GET["forum_id"]."'>return</a>";
         }
 
 		//if the result is bad
